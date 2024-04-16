@@ -1,0 +1,3 @@
+laravel: ./skeleton
+providers:
+  - SocolaDaiCa\LaravelModulesCommand\Providers\LaravelModulesCommandServiceProvider

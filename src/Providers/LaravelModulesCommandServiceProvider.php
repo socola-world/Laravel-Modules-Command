@@ -14,6 +14,7 @@ class LaravelModulesCommandServiceProvider extends ServiceProvider
 
         // $this->app->register(\Nwidart\Modules\LaravelModulesServiceProvider::class);
         $this->app->register(OverwriteLaravelModulesServiceProvider::class);
+        $this->app->register(EventServiceProvider::class);
     }
 
     /**

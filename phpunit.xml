@@ -11,9 +11,6 @@
         <testsuite name="Feature">
             <directory suffix="Test.php">./tests/Feature</directory>
         </testsuite>
-        <testsuite name="Feature">
-            <directory suffix="Test.php">./vendor/socoladaica/laravel-audit/src/TestCases</directory>
-        </testsuite>
     </testsuites>
     <coverage processUncoveredFiles="true">
         <include>

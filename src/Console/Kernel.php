@@ -4,7 +4,7 @@ namespace SocolaDaiCa\LaravelModulesCommand\Console;
 
 use Illuminate\Console\Scheduling\Schedule;
 use ReflectionException;
-use SocolaDaiCa\LaravelModulesCommand\Console\Commands\Migrations;
+use SocolaDaiCa\LaravelModulesCommand\Console\Commands;
 
 class Kernel extends \SocolaDaiCa\LaravelBadassium\Contracts\Console\Kernel
 {
@@ -14,9 +14,51 @@ class Kernel extends \SocolaDaiCa\LaravelBadassium\Contracts\Console\Kernel
      * @var array
      */
     protected $commands = [
-        Migrations\RefreshCommand::class,
-        Migrations\ResetCommand::class,
-        Migrations\FreshCommand::class,
+        Commands\Migrations\RefreshCommand::class,
+        Commands\Migrations\ResetCommand::class,
+        Commands\Migrations\FreshCommand::class,
+        Commands\CastMakeCommand::class,
+        Commands\ChannelMakeCommand::class,
+        Commands\ComponentMakeCommand::class,
+        Commands\ConsoleMakeCommand::class,
+        Commands\ControllerMakeCommand::class,
+        Commands\EventMakeCommand::class,
+        Commands\ExceptionMakeCommand::class,
+        Commands\FactoryMakeCommand::class,
+        Commands\JobMakeCommand::class,
+        Commands\ListenerMakeCommand::class,
+        Commands\MailMakeCommand::class,
+        Commands\MiddlewareMakeCommand::class,
+        Commands\Migrations\StatusCommand::class,
+        Commands\MigrateMakeCommand::class,
+        Commands\ModuleMakeCommand::class,
+        Commands\NotificationMakeCommand::class,
+        Commands\ObserverMakeCommand::class,
+        Commands\PolicyMakeCommand::class,
+        Commands\ProviderMakeCommand::class,
+        Commands\RequestMakeCommand::class,
+        Commands\ResourceMakeCommand::class,
+        Commands\RuleMakeCommand::class,
+        // SeedCommand::class,
+        Commands\SeederMakeCommand::class,
+        Commands\TestMakeCommand::class,
+        Commands\ViewMakeCommand::class,
+        Commands\MigrateCommand::class,
+        Commands\RollbackCommand::class,
+        /* new */
+        Commands\HttpKernelMakeCommand::class,
+        Commands\ProviderMake1Command::class,
+        Commands\StorageLinkCommand::class,
+        Commands\StorageUnlinkCommand::class,
+        Commands\CmsCommand::class,
+        Commands\IdeHelperCommnad::class,
+        Commands\ModuleUpdateCommand::class,
+        Commands\FacadeMakeCommand::class,
+        Commands\Customs\FacadeDocsCommand::class,
+        /**/
+        Commands\ModelMakeCommand::class,
+        /* Customs */
+        Commands\Customs\VendorLinkCommand::class,
     ];
 
     /**

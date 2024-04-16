@@ -9,6 +9,7 @@
     ],
     "license": "MIT",
     "require": {
+        "socoladaica/laravel-badassium": "^1.0",
         "nwidart/laravel-modules": "^10",
         "socoladaica/phpstorm": "^1.0",
         "stevebauman/autodoc-facades": "*",
@@ -16,7 +17,8 @@
         "nikic/php-parser": "^4"
     },
     "require-dev": {
-        "socoladaica/laravel-audit": "^1.0"
+        "socoladaica/laravel-audit": "^1.0",
+        "orchestra/testbench": "^8.21"
     },
     "extra": {
         "laravel": {
@@ -34,6 +36,11 @@
     "autoload": {
         "psr-4": {
             "SocolaDaiCa\\LaravelModulesCommand\\": "src/"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "SocolaDaiCa\\LaravelModulesCommand\\Tests\\": "tests/"
         }
     },
     "repositories": [

@@ -4,7 +4,6 @@ namespace SocolaDaiCa\LaravelModulesCommand\Console;
 
 use Illuminate\Console\Scheduling\Schedule;
 use ReflectionException;
-use SocolaDaiCa\LaravelModulesCommand\Console\Commands;
 
 class Kernel extends \SocolaDaiCa\LaravelBadassium\Contracts\Console\Kernel
 {

@@ -2,9 +2,6 @@
 
 namespace SocolaDaiCa\LaravelModulesCommand\Listeners;
 
-use Illuminate\Contracts\Queue\ShouldQueue;
-use Illuminate\Database\Events\MigrationsEnded;
-use Illuminate\Queue\InteractsWithQueue;
 use Illuminate\Support\Facades\Artisan;
 
 class MigrationsEndedListener

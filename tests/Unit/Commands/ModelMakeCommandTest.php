@@ -22,7 +22,8 @@ class ModelMakeCommandTest extends TestCase
     /**
      * Get package providers.
      *
-     * @param  \Illuminate\Foundation\Application  $app
+     * @param \Illuminate\Foundation\Application $app
+     *
      * @return array<int, class-string<\Illuminate\Support\ServiceProvider>>
      */
     protected function getPackageProviders($app)
@@ -49,9 +50,10 @@ class ModelMakeCommandTest extends TestCase
     {
         $this->artisan('make:model', [
             'module' => 'a',
-            'name' => 'Foo'
+            'name' => 'Foo',
         ])
-            ->assertExitCode(0);
+            ->assertExitCode(0)
+        ;
 
         $this->assertFileContains([
             'namespace App\Models;',

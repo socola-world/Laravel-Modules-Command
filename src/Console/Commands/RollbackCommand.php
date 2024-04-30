@@ -2,7 +2,7 @@
 
 namespace SocolaDaiCa\LaravelModulesCommand\Console\Commands;
 
-use SocolaDaiCa\LaravelModulesCommand\Console\BaseCommand;
+use SocolaDaiCa\LaravelModulesCommand\Console\Traits\BaseCommand;
 use SocolaDaiCa\LaravelModulesCommand\Overwrite\MigratorForModule;
 
 class RollbackCommand extends \Illuminate\Database\Console\Migrations\RollbackCommand

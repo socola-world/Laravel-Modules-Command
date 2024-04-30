@@ -1,6 +1,6 @@
 <?php
 
-namespace SocolaDaiCa\LaravelModulesCommand\Console;
+namespace SocolaDaiCa\LaravelModulesCommand\Console\Traits;
 
 use Symfony\Component\Filesystem\Path;
 

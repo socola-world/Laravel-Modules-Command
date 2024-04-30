@@ -5,8 +5,7 @@ namespace SocolaDaiCa\LaravelModulesCommand\Console\Commands\Customs;
 use Illuminate\Support\Facades\File;
 use Illuminate\Support\Str;
 use Nwidart\Modules\Facades\Module;
-use SocolaDaiCa\LaravelBadassium\Contracts\Console\Command;
-use SocolaDaiCa\LaravelModulesCommand\Console\CommonCommand;
+use SocolaDaiCa\LaravelModulesCommand\Console\Traits\CommonCommand;
 
 class VendorLinkCommand extends \Illuminate\Foundation\Console\StorageLinkCommand
 {

@@ -2,7 +2,7 @@
 
 namespace SocolaDaiCa\LaravelModulesCommand\Console\Commands;
 
-use SocolaDaiCa\LaravelModulesCommand\Console\GeneratorDatabaseCommand;
+use SocolaDaiCa\LaravelModulesCommand\Console\Traits\GeneratorDatabaseCommand;
 
 class SeederMakeCommand extends \Illuminate\Database\Console\Seeds\SeederMakeCommand
 {

@@ -4,7 +4,7 @@ namespace SocolaDaiCa\LaravelModulesCommand\Console\Commands;
 
 use Illuminate\Database\Migrations\MigrationCreator;
 use Illuminate\Support\Composer;
-use SocolaDaiCa\LaravelModulesCommand\Console\BaseCommand;
+use SocolaDaiCa\LaravelModulesCommand\Console\Traits\BaseCommand;
 
 class MigrateMakeCommand extends \Illuminate\Database\Console\Migrations\MigrateMakeCommand
 {

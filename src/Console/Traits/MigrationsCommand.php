@@ -2,8 +2,6 @@
 
 namespace SocolaDaiCa\LaravelModulesCommand\Console\Traits;
 
-use SocolaDaiCa\LaravelModulesCommand\Console\BaseCommand;
-
 trait MigrationsCommand
 {
     use BaseCommand;

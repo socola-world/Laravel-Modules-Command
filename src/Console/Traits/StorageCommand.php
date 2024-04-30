@@ -5,7 +5,6 @@ namespace SocolaDaiCa\LaravelModulesCommand\Console\Traits;
 use Illuminate\Support\Facades\File;
 use Illuminate\Support\Str;
 use Nwidart\Modules\Facades\Module;
-use SocolaDaiCa\LaravelModulesCommand\Console\CommonCommand;
 
 trait StorageCommand
 {

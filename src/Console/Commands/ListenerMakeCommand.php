@@ -2,7 +2,7 @@
 
 namespace SocolaDaiCa\LaravelModulesCommand\Console\Commands;
 
-use SocolaDaiCa\LaravelModulesCommand\Console\GeneratorCommand;
+use SocolaDaiCa\LaravelModulesCommand\Console\Traits\GeneratorCommand;
 
 class ListenerMakeCommand extends \Illuminate\Foundation\Console\ListenerMakeCommand
 {

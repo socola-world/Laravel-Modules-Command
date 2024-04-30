@@ -2,7 +2,7 @@
 
 namespace SocolaDaiCa\LaravelModulesCommand\Console\Commands;
 
-use SocolaDaiCa\LaravelModulesCommand\Console\GeneratorCommand;
+use SocolaDaiCa\LaravelModulesCommand\Console\Traits\GeneratorCommand;
 use SocolaDaiCa\LaravelModulesCommand\PhpParse\PhpParse;
 
 class MiddlewareMakeCommand extends \Illuminate\Routing\Console\MiddlewareMakeCommand

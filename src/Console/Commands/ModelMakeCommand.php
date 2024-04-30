@@ -3,7 +3,7 @@
 namespace SocolaDaiCa\LaravelModulesCommand\Console\Commands;
 
 use Illuminate\Support\Str;
-use SocolaDaiCa\LaravelModulesCommand\Console\GeneratorCommand;
+use SocolaDaiCa\LaravelModulesCommand\Console\Traits\GeneratorCommand;
 use SocolaDaiCa\LaravelModulesCommand\PhpParse\PhpParse;
 
 class ModelMakeCommand extends \Illuminate\Foundation\Console\ModelMakeCommand

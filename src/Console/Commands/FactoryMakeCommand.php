@@ -3,7 +3,7 @@
 namespace SocolaDaiCa\LaravelModulesCommand\Console\Commands;
 
 use Illuminate\Support\Str;
-use SocolaDaiCa\LaravelModulesCommand\Console\GeneratorDatabaseCommand;
+use SocolaDaiCa\LaravelModulesCommand\Console\Traits\GeneratorDatabaseCommand;
 
 class FactoryMakeCommand extends \Illuminate\Database\Console\Factories\FactoryMakeCommand
 {

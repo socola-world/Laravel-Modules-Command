@@ -5,7 +5,7 @@ namespace SocolaDaiCa\LaravelModulesCommand\Console\Commands;
 use Illuminate\Database\Eloquent\Model;
 use Illuminate\Support\Arr;
 use Illuminate\Support\Str;
-use SocolaDaiCa\LaravelModulesCommand\Console\GeneratorCommand;
+use SocolaDaiCa\LaravelModulesCommand\Console\Traits\GeneratorCommand;
 use SocolaDaiCa\LaravelModulesCommand\StubModify;
 use Symfony\Component\Finder\Finder;
 

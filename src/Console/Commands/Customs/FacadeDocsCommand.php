@@ -48,6 +48,12 @@ class FacadeDocsCommand extends Command
             $facadesFolders[] = $facadesFolder;
         }
 
+        if (empty($facadesFolders)) {
+            $this->warn('No facades found.');
+
+            return;
+        }
+
         Artisan::call('autodoc:facades', [
             'paths' => $facadesFolders,
         ], $this->output);

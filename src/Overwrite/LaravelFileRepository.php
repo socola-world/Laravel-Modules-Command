@@ -8,17 +8,11 @@ class LaravelFileRepository extends \Nwidart\Modules\Laravel\LaravelFileReposito
 {
     protected $modules;
 
-    /**
-     * @inheritDoc
-     */
     protected function createModule(...$args)
     {
         return new Module(...$args);
     }
 
-    /**
-     * @inheritDoc
-     */
     public function find(string $name)
     {
         foreach ($this->all() as $module) {

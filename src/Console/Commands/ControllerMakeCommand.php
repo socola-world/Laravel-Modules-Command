@@ -23,7 +23,7 @@ class ControllerMakeCommand extends \Illuminate\Routing\Console\ControllerMakeCo
             $controllerName = Str::beforeLast($controllerName, 'Controller');
         }
 
-        $controllerName = Str::afterLast($controllerName, '\\Controllers\\');
+        $controllerName = Str::afterLast($controllerName, '\Controllers\\');
 
         $viewFolder = $controllerName;
         $viewFolder = Str::replace('\\', '/', $viewFolder);
@@ -58,7 +58,7 @@ class ControllerMakeCommand extends \Illuminate\Routing\Console\ControllerMakeCo
         ]);
 
         $replace = [
-            'use Illuminate\\Http\\Request;' => $namespacedRequests,
+            'use Illuminate\Http\Request;' => $namespacedRequests,
             "     * @return \\Illuminate\\Http\\Response\n" => '',
         ];
 

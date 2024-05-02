@@ -218,7 +218,7 @@ class ModuleGenerator extends \Nwidart\Modules\Generators\ModuleGenerator
         $namespace = $this->getModuleNamespaceReplacement();
         $studlyName = $this->getStudlyNameReplacement();
 
-        $provider = '"'.$namespace.'\\\\'.$studlyName.'\\\\Providers\\\\'.$studlyName.'ServiceProvider"';
+        $provider = '"'.$namespace.'\\\\'.$studlyName.'\\\Providers\\\\'.$studlyName.'ServiceProvider"';
 
         $content = str_replace($provider, '', $content);
 

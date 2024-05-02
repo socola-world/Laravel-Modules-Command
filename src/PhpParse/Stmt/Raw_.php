@@ -27,7 +27,7 @@ class Raw_ extends Node\Stmt
                 array_pop($contents);
             }
 
-            preg_match('/^(\\s+)/', $contents[0], $matches);
+            preg_match('/^(\s+)/', $contents[0], $matches);
 
             foreach ($contents as $index => $content) {
                 $contents[$index] = Str::replaceFirst($matches[0], '', $content);

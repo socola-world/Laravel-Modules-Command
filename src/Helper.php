@@ -26,7 +26,7 @@ class Helper
 
     public static function strRemoveZeroWidthCharacter($text)
     {
-        return preg_replace('/[\\x{200B}-\\x{200D}\\x{FEFF}]/u', '', $text);
+        return preg_replace('/[\x{200B}-\x{200D}\x{FEFF}]/u', '', $text);
     }
 
     public static function overwrireModulesConfig()

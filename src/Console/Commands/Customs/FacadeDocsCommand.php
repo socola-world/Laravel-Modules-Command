@@ -43,7 +43,7 @@ class FacadeDocsCommand extends Command
 
             $facadesFolder = realpath($facadesFolder);
             $facadesFolder = Str::after($facadesFolder, base_path());
-            $facadesFolder = trim($facadesFolder, '\\/');
+            $facadesFolder = trim($facadesFolder, '\/');
 
             $facadesFolders[] = $facadesFolder;
         }

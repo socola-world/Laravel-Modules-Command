@@ -142,7 +142,7 @@ trait CommonCommand
                         $parent
                     );
 
-                    $directory = trim($directory, '\\/');
+                    $directory = trim($directory, '\/');
                     $directory .= '\\';
 
                     return $directory;

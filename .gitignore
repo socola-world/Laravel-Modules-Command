@@ -6,6 +6,7 @@
 /.idea
 /.vscode
 /build
+/composer.lock
 /coverage
 /node_modules
 /public/hot

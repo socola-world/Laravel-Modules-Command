@@ -12,7 +12,7 @@ class ModuleUpdateCommand extends Command
      *
      * @var string
      */
-    protected $signature = 'cms:update:module';
+    protected $signature = 'cms:module:update';
 
     /**
      * The console command description.

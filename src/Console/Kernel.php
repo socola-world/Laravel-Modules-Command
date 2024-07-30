@@ -45,15 +45,16 @@ class Kernel extends \SocolaDaiCa\LaravelBadassium\Contracts\Console\Kernel
         Commands\MigrateCommand::class,
         Commands\RollbackCommand::class,
         /* new */
+        Commands\CmsCommand::class,
+        Commands\Customs\FacadeDocsCommand::class,
+        Commands\FacadeMakeCommand::class,
         Commands\HttpKernelMakeCommand::class,
+        Commands\IdeHelperCommnad::class,
+        Commands\ModuleLinkCommand::class,
+        Commands\ModuleUpdateCommand::class,
         Commands\ProviderMake1Command::class,
         Commands\StorageLinkCommand::class,
         Commands\StorageUnlinkCommand::class,
-        Commands\CmsCommand::class,
-        Commands\IdeHelperCommnad::class,
-        Commands\ModuleUpdateCommand::class,
-        Commands\FacadeMakeCommand::class,
-        Commands\Customs\FacadeDocsCommand::class,
         /**/
         Commands\ModelMakeCommand::class,
         /* Customs */

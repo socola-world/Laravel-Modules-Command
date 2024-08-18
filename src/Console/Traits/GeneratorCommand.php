@@ -88,9 +88,14 @@ trait GeneratorCommand
         $type = $this->getType();
         $module = $this->laravel['modules'];
 
-        $namespace = $module->config("paths.generator.{$type}.namespace") ?: $module->config("paths.generator.{$type}.path");
+        $namespace = $module->config("paths.generator.{$type}.namespace");
 
-        return $rootNamespace.'\\'.str_replace('/', '\\', $namespace);
+        return trim(
+            trim($rootNamespace, '\\')
+            .'\\'
+            .str_replace('/', '\\', $namespace),
+            '\\',
+        );
     }
 
     public function getDefaultNamespaceByType($type)
@@ -98,9 +103,14 @@ trait GeneratorCommand
         $module = $this->laravel['modules'];
         $rootNamespace = $this->rootNamespace();
 
-        $namespace = $module->config("paths.generator.{$type}.namespace") ?: $module->config("paths.generator.{$type}.path");
+        $namespace = $module->config("paths.generator.{$type}.namespace");
 
-        return trim($rootNamespace, '\\').'\\'.str_replace('/', '\\', $namespace);
+        return trim(
+            trim($rootNamespace, '\\')
+            .'\\'
+            .str_replace('/', '\\', $namespace),
+            '\\',
+        );
     }
 
     public function getType()

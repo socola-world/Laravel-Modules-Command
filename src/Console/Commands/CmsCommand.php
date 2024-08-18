@@ -34,7 +34,6 @@ class CmsCommand extends Command
      */
     public function handle()
     {
-        Cache::disable();
         $this->selectModule();
     }
 

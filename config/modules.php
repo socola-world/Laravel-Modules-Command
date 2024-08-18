@@ -170,6 +170,7 @@ return [
             'trait' => ['namespace' => '', 'path' => 'src', 'generate' => false],
             'scope' => ['namespace' => 'Models/Scopes', 'path' => 'src/Models/Scopes', 'generate' => false],
             'enum' => ['namespace' => 'Enums', 'path' => 'src/Enums', 'generate' => false],
+            'interface' => ['namespace' => '', 'path' => 'src', 'generate' => false],
             'migration' => ['namespace' => 'Database/Migrations', 'path' => 'database/migrations', 'generate' => true],
             'facade' => ['namespace' => 'Facades', 'path' => 'src/Facades', 'generate' => false],
             'seeder' => ['namespace' => 'Database/Seeders', 'path' => 'database/seeders', 'generate' => false],

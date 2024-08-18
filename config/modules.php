@@ -166,6 +166,7 @@ return [
             'config' => ['path' => 'config', 'generate' => false],
             'command' => ['namespace' => 'Console/Commands', 'path' => 'src/Console/Commands', 'generate' => false],
             'cast' => ['namespace' => 'Casts', 'path' => 'src/Casts', 'generate' => false],
+            'class' => ['namespace' => '', 'path' => 'src', 'generate' => false],
             'migration' => ['namespace' => 'Database/Migrations', 'path' => 'database/migrations', 'generate' => true],
             'facade' => ['namespace' => 'Facades', 'path' => 'src/Facades', 'generate' => false],
             'seeder' => ['namespace' => 'Database/Seeders', 'path' => 'database/seeders', 'generate' => false],

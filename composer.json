@@ -13,7 +13,6 @@
         "nwidart/laravel-modules": "^10",
         "socoladaica/laravel-badassium": "^2.0",
         "socoladaica/phpstorm": "^2.0",
-        "spatie/once": "^3.1.1",
         "stevebauman/autodoc-facades": "*",
         "symfony/filesystem": "*"
     },

@@ -10,6 +10,6 @@ on:
 
 jobs:
   release:
-    uses: SocolarDaiCa/.github/.github/workflows/release.yml@1.x
+    uses: SocolarDaiCa/.github/.github/workflows/release.yml@2.x
     with:
       version: $GITHUB_REF

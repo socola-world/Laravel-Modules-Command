@@ -4,6 +4,6 @@ on: [push]
 
 jobs:
   phpcs:
-    uses: SocolarDaiCa/.github/.github/workflows/php-cs-fixer.yml@1.x
+    uses: SocolarDaiCa/.github/.github/workflows/php-cs-fixer.yml@2.x
     secrets:
       COMPOSER_AUTH: ${{ secrets.COMPOSER_AUTH }}

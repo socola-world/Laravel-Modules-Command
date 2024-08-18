@@ -24,6 +24,7 @@ class Kernel extends \SocolaDaiCa\LaravelBadassium\Contracts\Console\Kernel
         Commands\ExceptionMakeCommand::class,
         Commands\FactoryMakeCommand::class,
         Commands\InterfaceMakeCommand::class,
+        Commands\InterfaceMakeCommand::class,
         Commands\JobMakeCommand::class,
         Commands\ListenerMakeCommand::class,
         Commands\MailMakeCommand::class,

@@ -83,10 +83,7 @@ class FindMissingCommand extends Command
             })
             ->all()
         ;
-        dd(
-            '$missingCommandNames',
-            $missingCommandNames,
-        );
+        $this->line('Missing Command:'. json_encode($missingCommandNames, JSON_PRETTY_PRINT));
         // dd(
         //     'Laravel Command Names',
         //     $laravelCommandNames,

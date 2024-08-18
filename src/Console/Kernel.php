@@ -13,15 +13,12 @@ class Kernel extends \SocolaDaiCa\LaravelBadassium\Contracts\Console\Kernel
      * @var array
      */
     protected $commands = [
-        Commands\Migrations\RefreshCommand::class,
-        Commands\Migrations\ResetCommand::class,
-        Commands\Migrations\FreshCommand::class,
         Commands\CastMakeCommand::class,
         Commands\ChannelMakeCommand::class,
+        Commands\ClassMakeCommand::class,
         Commands\ComponentMakeCommand::class,
         Commands\ConsoleMakeCommand::class,
         Commands\ControllerMakeCommand::class,
-        Commands\ClassMakeCommand::class,
         Commands\EventMakeCommand::class,
         Commands\ExceptionMakeCommand::class,
         Commands\FactoryMakeCommand::class,
@@ -29,8 +26,11 @@ class Kernel extends \SocolaDaiCa\LaravelBadassium\Contracts\Console\Kernel
         Commands\ListenerMakeCommand::class,
         Commands\MailMakeCommand::class,
         Commands\MiddlewareMakeCommand::class,
-        Commands\Migrations\StatusCommand::class,
         Commands\MigrateMakeCommand::class,
+        Commands\Migrations\FreshCommand::class,
+        Commands\Migrations\RefreshCommand::class,
+        Commands\Migrations\ResetCommand::class,
+        Commands\Migrations\StatusCommand::class,
         Commands\ModuleMakeCommand::class,
         Commands\NotificationMakeCommand::class,
         Commands\ObserverMakeCommand::class,
@@ -39,6 +39,7 @@ class Kernel extends \SocolaDaiCa\LaravelBadassium\Contracts\Console\Kernel
         Commands\RequestMakeCommand::class,
         Commands\ResourceMakeCommand::class,
         Commands\RuleMakeCommand::class,
+        Commands\TraitMakeCommand::class,
         // SeedCommand::class,
         Commands\SeederMakeCommand::class,
         Commands\TestMakeCommand::class,
@@ -60,6 +61,7 @@ class Kernel extends \SocolaDaiCa\LaravelBadassium\Contracts\Console\Kernel
         Commands\ModelMakeCommand::class,
         /* Customs */
         Commands\Customs\VendorLinkCommand::class,
+        Commands\FindMissingCommand::class,
     ];
 
     /**

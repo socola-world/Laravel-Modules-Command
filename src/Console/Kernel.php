@@ -40,6 +40,7 @@ class Kernel extends \SocolaDaiCa\LaravelBadassium\Contracts\Console\Kernel
         Commands\RequestMakeCommand::class,
         Commands\ResourceMakeCommand::class,
         Commands\RuleMakeCommand::class,
+        Commands\ScopeMakeCommand::class,
         Commands\TraitMakeCommand::class,
         // SeedCommand::class,
         Commands\SeederMakeCommand::class,

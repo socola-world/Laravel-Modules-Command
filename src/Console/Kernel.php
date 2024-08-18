@@ -19,6 +19,7 @@ class Kernel extends \SocolaDaiCa\LaravelBadassium\Contracts\Console\Kernel
         Commands\ComponentMakeCommand::class,
         Commands\ConsoleMakeCommand::class,
         Commands\ControllerMakeCommand::class,
+        Commands\EnumMakeCommand::class,
         Commands\EventMakeCommand::class,
         Commands\ExceptionMakeCommand::class,
         Commands\FactoryMakeCommand::class,

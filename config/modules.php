@@ -168,6 +168,7 @@ return [
             'cast' => ['namespace' => 'Casts', 'path' => 'src/Casts', 'generate' => false],
             'class' => ['namespace' => '', 'path' => 'src', 'generate' => false],
             'trait' => ['namespace' => '', 'path' => 'src', 'generate' => false],
+            'enum' => ['namespace' => 'Enums', 'path' => 'src/Enums', 'generate' => false],
             'migration' => ['namespace' => 'Database/Migrations', 'path' => 'database/migrations', 'generate' => true],
             'facade' => ['namespace' => 'Facades', 'path' => 'src/Facades', 'generate' => false],
             'seeder' => ['namespace' => 'Database/Seeders', 'path' => 'database/seeders', 'generate' => false],

@@ -2,7 +2,6 @@
 
 namespace SocolaDaiCa\LaravelModulesCommand\Console\Commands;
 
-use Illuminate\Support\Arr;
 use Illuminate\Support\Facades\Artisan;
 use Illuminate\Support\Str;
 use SocolaDaiCa\LaravelBadassium\Contracts\Console\Command;
@@ -34,11 +33,10 @@ class FindMissingCommand extends Command
         $laravelCommandNames = collect($commandNames)
             ->filter(function ($commandName) {
                 return
-                    (
                         Str::startsWith($commandName, [
                             'db:',
                         ])
-                    )
+
                     || (
                         !Str::startsWith($commandName, [
                             'cms:',
@@ -69,8 +67,7 @@ class FindMissingCommand extends Command
                             '',
                             '',
                         ])
-                    )
-                ;
+                    );
             })
             ->all()
         ;

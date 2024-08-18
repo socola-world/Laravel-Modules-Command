@@ -28,6 +28,7 @@ class ModuleLinkCommand extends Command
     {
         $files = File::glob(base_path('vendor/socoladaica/*/module.json'));
         $ignoreFolders = [];
+
         foreach ($files as $file) {
             $file = realpath($file);
             $folder = dirname($file);
@@ -45,7 +46,7 @@ class ModuleLinkCommand extends Command
 
             File::link($folder, $moduleDir);
             $ignoreFolders[] = "Modules/{$module}";
-            $this->info("The [$folder] link has been connected to [$moduleDir].\n");
+            $this->info("The [{$folder}] link has been connected to [{$moduleDir}].\n");
         }
         sort($ignoreFolders);
         File::put(base_path('Modules/.gitignore'), implode("\n", $ignoreFolders));

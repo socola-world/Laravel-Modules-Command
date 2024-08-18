@@ -7,7 +7,6 @@ use Illuminate\Support\Facades\Artisan;
 use Illuminate\Support\Str;
 use SocolaDaiCa\LaravelAudit\Helper;
 use SocolaDaiCa\LaravelBadassium\Contracts\Console\Command;
-use Spatie\Once\Cache;
 
 class CmsCommand extends Command
 {

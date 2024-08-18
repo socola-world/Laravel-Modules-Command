@@ -9,12 +9,13 @@
     ],
     "license": "MIT",
     "require": {
-        "socoladaica/laravel-badassium": "^1.0",
+        "nikic/php-parser": "^5",
         "nwidart/laravel-modules": "^10",
-        "socoladaica/phpstorm": "^1.0",
+        "socoladaica/laravel-badassium": "^2.0",
+        "socoladaica/phpstorm": "^2.0",
+        "spatie/once": "^3.1.1",
         "stevebauman/autodoc-facades": "*",
-        "symfony/filesystem": "*",
-        "nikic/php-parser": "^5"
+        "symfony/filesystem": "*"
     },
     "require-dev": {
         "socoladaica/laravel-audit": "^1.0",

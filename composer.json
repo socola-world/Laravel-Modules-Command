@@ -17,8 +17,8 @@
         "symfony/filesystem": "*"
     },
     "require-dev": {
-        "socoladaica/laravel-audit": "^1.0",
-        "orchestra/testbench": "^8.21"
+        "socoladaica/laravel-audit": "^2.0",
+        "orchestra/testbench": "^9.3.0"
     },
     "extra": {
         "laravel": {

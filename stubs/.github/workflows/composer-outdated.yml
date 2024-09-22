@@ -1,0 +1,9 @@
+name: Find outdated packages
+
+on: [push]
+
+jobs:
+  phpcs:
+    uses: SocolarDaiCa/.github/.github/workflows/composer-outdated.yml@2.x
+    secrets:
+      COMPOSER_AUTH: ${{ secrets.COMPOSER_AUTH }}

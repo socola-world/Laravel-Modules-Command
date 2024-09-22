@@ -54,6 +54,7 @@ return [
             // /**/
             // /**/
             /* Folder */
+            '.github/workflows/composer-outdated.yml' => '.github/workflows/composer-outdated.yml',
             '.github/workflows/php-cs-fixer.yml' => '.github/workflows/php-cs-fixer.yml',
             '.github/FUNDING.yml' => '.github/FUNDING.yml',
             '.github/workflows/review-code.yml' => '.github/workflows/review-code.yml',
@@ -90,6 +91,7 @@ return [
             'webpack.mix.js' => 'webpack.mix.js',
         ],
         'force_overwire' => [
+            '.github/workflows/composer-outdated.yml',
             '.github/workflows/php-cs-fixer.yml',
             '.github/workflows/review-code.yml',
             '.github/workflows/release.yml',

@@ -2,13 +2,13 @@
 
 # __MODULE_NAMESPACE__\__STUDLY_NAME__
 
-[![Latest Version on Packagist](https://img.shields.io/packagist/v/__VENDOR__/__LOWER_NAME__.svg?style=flat-square)](https://packagist.org/packages/:vendor_slug/:package_slug)
+[![Latest Version on Packagist](https://img.shields.io/packagist/v/__VENDOR__/__LOWER_NAME__.svg?style=flat-square)](https://packagist.socoladaica.com/packages/__VENDOR__/__LOWER_NAME__)
 
 [![GitHub Tests Action Status](https://img.shields.io/github/workflow/status/__VENDOR__/__LOWER_NAME__/run-tests?label=tests)](https://github.com/__VENDOR__/__LOWER_NAME__/actions?query=workflow%3Arun-tests+branch%3Amain)
 
 [![GitHub Code Style Action Status](https://img.shields.io/github/workflow/status/__VENDOR__/__LOWER_NAME__/Fix%20PHP%20code%20style%20issues?label=code%20style)](https://github.com/__VENDOR__/__LOWER_NAME__/actions?query=workflow%3A"Fix+PHP+code+style+issues"+branch%3Amain)
 
-[![Total Downloads](https://img.shields.io/packagist/dt/:__VENDOR__/__LOWER_NAME__.svg?style=flat-square)](https://packagist.org/packages/__VENDOR__/__LOWER_NAME__)
+[![Total Downloads](https://img.shields.io/packagist/dt/:__VENDOR__/__LOWER_NAME__.svg?style=flat-square)](https://packagist.socoladaica.com/packages/__VENDOR__/__LOWER_NAME__)
 
 [//]: # (## Support us)
 

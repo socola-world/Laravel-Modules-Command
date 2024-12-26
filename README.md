@@ -2,11 +2,11 @@
 
 Create Laravel package with structure like laravel application
 
-[//]: # ([![Latest Version on Packagist]&#40;https://img.shields.io/packagist/v/socoladaica/laravel-modules-command.svg?style=flat-square&#41;]&#40;https://packagist.org/packages/socoladaica/laravel-modules-command&#41;)
+[//]: # ([![Latest Version on Packagist]&#40;https://img.shields.io/packagist/v/socoladaica/laravel-modules-command.svg?style=flat-square&#41;]&#40;https://packagist.socoladaica.com/packages/socoladaica/laravel-modules-command&#41;)
 
 [//]: # ([![GitHub Tests Action Status]&#40;https://img.shields.io/github/workflow/status/socoladaica/laravel-modules-command/Tests?label=tests&#41;]&#40;https://github.com/socoladaica/laravel-modules-command/actions?query=workflow%3ATests+branch%3Amaster&#41;)
 
-[//]: # ([![Total Downloads]&#40;https://img.shields.io/packagist/dt/socoladaica/laravel-modules-command.svg?style=flat-square&#41;]&#40;https://packagist.org/packages/socoladaica/laravel-modules-command&#41;)
+[//]: # ([![Total Downloads]&#40;https://img.shields.io/packagist/dt/socoladaica/laravel-modules-command.svg?style=flat-square&#41;]&#40;https://packagist.socoladaica.com/packages/socoladaica/laravel-modules-command&#41;)
 
 [//]: # ()
 [//]: # (Generate Command for Laravel Modules base on laravel Generate Command)

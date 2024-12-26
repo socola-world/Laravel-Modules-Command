@@ -4,6 +4,7 @@ namespace SocolaDaiCa\LaravelModulesCommand\Console\Commands;
 
 use Illuminate\Database\Migrations\MigrationCreator;
 use Illuminate\Support\Composer;
+use SocolaDaiCa\LaravelBadassium\Illuminate\Database\Console\Migrations\TableGuesser;
 use SocolaDaiCa\LaravelModulesCommand\Console\Traits\BaseCommand;
 
 class MigrateMakeCommand extends \Illuminate\Database\Console\Migrations\MigrateMakeCommand
@@ -28,12 +29,14 @@ class MigrateMakeCommand extends \Illuminate\Database\Console\Migrations\Migrate
     protected function getMigrationPath()
     {
         return $this->getGeneratorFolder('migration');
-        //        if (! is_null($targetPath = $this->input->getOption('path'))) {
-        //            return ! $this->usingRealPath()
-        //                ? $this->laravel->basePath().'/'.$targetPath
-        //                : $targetPath;
-        //        }
-        //
-        //        return parent::getMigrationPath();
+    }
+
+    protected function writeMigration($name, $table, $create)
+    {
+        if (! $table) {
+            [$table, $create] = TableGuesser::guess($name);
+        }
+
+        parent::writeMigration($name, $table, $create);
     }
 }

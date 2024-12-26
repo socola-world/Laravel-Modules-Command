@@ -20,7 +20,7 @@ class RequestMakeCommand extends \Illuminate\Foundation\Console\RequestMakeComma
         return str_replace(
             array_keys($replaces),
             array_values($replaces),
-            $class
+            $class,
         );
 
         /** @var \SocolaDaiCa\LaravelModulesCommand\Overwrite\Module $module */

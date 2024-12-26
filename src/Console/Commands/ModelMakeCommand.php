@@ -31,7 +31,7 @@ class ModelMakeCommand extends \Illuminate\Foundation\Console\ModelMakeCommand
         $class = str_replace(
             array_keys($replaces),
             array_values($replaces),
-            $class
+            $class,
         );
 
         $table = Str::snake(Str::pluralStudly($this->argument('name')));

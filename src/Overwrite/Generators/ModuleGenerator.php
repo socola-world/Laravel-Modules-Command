@@ -24,7 +24,7 @@ class ModuleGenerator extends \Nwidart\Modules\Generators\ModuleGenerator
     {
         return (new Stub(
             '/'.$stub.'.stub',
-            $this->getReplacement($stub)
+            $this->getReplacement($stub),
         )
         )->render();
     }

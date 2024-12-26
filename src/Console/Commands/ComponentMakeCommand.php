@@ -15,7 +15,7 @@ class ComponentMakeCommand extends \Illuminate\Foundation\Console\ComponentMakeC
         return str_replace(
             'view(\'components.',
             "view('{$alias}::components.",
-            parent::buildClass($name)
+            parent::buildClass($name),
         );
     }
 }

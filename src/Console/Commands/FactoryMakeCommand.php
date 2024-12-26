@@ -21,7 +21,7 @@ class FactoryMakeCommand extends \Illuminate\Database\Console\Factories\FactoryM
         return str_replace(
             'namespace Database\Factories\Database\Factories;',
             'namespace '.$this->getGeneratorNamespace('factory').';',
-            parent::buildClass($name)
+            parent::buildClass($name),
         );
     }
 
@@ -30,7 +30,7 @@ class FactoryMakeCommand extends \Illuminate\Database\Console\Factories\FactoryM
         return str_replace(
             $this->rootNamespace().'Models\\',
             $this->getGeneratorNamespace('model').'\\',
-            parent::qualifyModel($model)
+            parent::qualifyModel($model),
         );
     }
 }

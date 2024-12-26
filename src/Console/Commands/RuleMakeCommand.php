@@ -52,7 +52,7 @@ class RuleMakeCommand extends \Illuminate\Foundation\Console\RuleMakeCommand
         return str_replace(
             $from,
             $to,
-            $class
+            $class,
         );
     }
 }

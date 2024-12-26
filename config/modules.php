@@ -117,7 +117,7 @@ return [
                 'PATH_VIEWS',
                 'PATH_LANG',
                 'PATH_MIGRATIONS',
-            ], $files)
+            ], $files),
         ),
         'gitkeep' => true,
     ],

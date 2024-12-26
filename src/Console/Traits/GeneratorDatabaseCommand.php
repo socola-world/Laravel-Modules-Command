@@ -17,10 +17,10 @@ trait GeneratorDatabaseCommand
         $name = preg_replace(
             '/^'.preg_quote(
                 config("modules.paths.generator.{$key}.namespace"),
-                '/'
+                '/',
             ).'\//',
             '',
-            $name
+            $name,
         );
 
         return $this->getGeneratorFolder($key)

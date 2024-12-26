@@ -25,7 +25,7 @@ class OverwriteLaravelModulesServiceProvider extends LaravelModulesServiceProvid
         $this->app->singleton(MigrationCreator::class, function ($app) {
             return new \SocolaDaiCa\LaravelModulesCommand\Overwrite\MigrationCreator(
                 $app['files'],
-                $app->basePath('stubs')
+                $app->basePath('stubs'),
             );
         });
     }

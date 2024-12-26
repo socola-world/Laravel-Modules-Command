@@ -44,7 +44,7 @@ class LaravelIdeHelperModelsCommand extends ModelsCommand
             (array) $columns,
             function ($value) {
                 return isset($this->nullableColumns[$value]);
-            }
+            },
         );
     }
 
@@ -54,7 +54,7 @@ class LaravelIdeHelperModelsCommand extends ModelsCommand
             (array) $columns,
             function ($value) {
                 return in_array($value, $this->foreignKeyConstraintsColumns, true);
-            }
+            },
         );
     }
 }

@@ -19,7 +19,7 @@ class Helper
 
             $config->set($key, array_merge(
                 $config->get($key, []),
-                require $path
+                require $path,
             ));
         }
     }

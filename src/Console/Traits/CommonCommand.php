@@ -100,7 +100,7 @@ trait CommonCommand
                 'Controller' => fn () => $this->autoCompleteClassName(
                     $prompts['name'][0],
                     config('modules.paths.generator.controller.path'),
-                    'Controller'
+                    'Controller',
                 ),
                 // todo: make:command auto complete
                 default => $prompts['name'],
@@ -131,15 +131,15 @@ trait CommonCommand
                     $queue = array_merge(
                         $queue,
                         \Illuminate\Support\Facades\File::directories(
-                            $current
-                        )
+                            $current,
+                        ),
                     );
                 }
 
                 $namespaces = array_map(function ($directory) use ($parent) {
                     $directory = Str::after(
                         $directory,
-                        $parent
+                        $parent,
                     );
 
                     $directory = trim($directory, '\/');
@@ -173,7 +173,7 @@ trait CommonCommand
                 ;
 
                 return $namespaces;
-            }
+            },
         );
     }
 

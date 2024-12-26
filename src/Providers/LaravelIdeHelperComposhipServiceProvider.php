@@ -46,7 +46,7 @@ class LaravelIdeHelperComposhipServiceProvider extends ServiceProvider
         ], 'config');
         $this->mergeConfigFrom(
             module_path($this->moduleName, 'config/config.php'),
-            $this->moduleNameLower
+            $this->moduleNameLower,
         );
     }
 

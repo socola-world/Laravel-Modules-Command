@@ -79,7 +79,7 @@ trait GeneratorCommand
             $this->getModule()->getPath(),
             $this->laravel['config']['modules']['paths']['generator']['views']['path'],
             Str::startsWith($path, 'components/') ? '' : 'pages',
-            $path
+            $path,
         );
     }
 
@@ -132,7 +132,7 @@ trait GeneratorCommand
 
         return Path::join(
             $path.$commandPath->getPath(),
-            $this->getFileName().'.php'
+            $this->getFileName().'.php',
         );
     }
 

@@ -41,7 +41,7 @@ class FacadeMakeCommand extends \Illuminate\Console\GeneratorCommand
         return str_replace(
             array_keys($replacements),
             array_values($replacements),
-            $stub
+            $stub,
         );
     }
 }

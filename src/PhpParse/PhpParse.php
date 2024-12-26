@@ -21,7 +21,7 @@ class PhpParse implements Stringable
     protected \PhpParser\Parser\Php7 $parser;
 
     /**
-     * @var \PhpParser\Node[]
+     * @var Node[]
      */
     protected array $newStmts;
 
@@ -30,7 +30,7 @@ class PhpParse implements Stringable
     protected Standard $printer;
 
     /**
-     * @var \PhpParser\Node\Stmt[]|null
+     * @var Node\Stmt[]|null
      */
     protected ?array $oldStmts;
 
@@ -128,7 +128,7 @@ class PhpParse implements Stringable
     {
         return Arr::first(
             $this->class()->stmts,
-            fn (ClassMethod $classMethod) => $classMethod->name->name == $methodName
+            fn (ClassMethod $classMethod) => $classMethod->name->name == $methodName,
         );
     }
 
@@ -158,7 +158,7 @@ class PhpParse implements Stringable
         return $this->printer->printFormatPreserving(
             $this->newStmts,
             $this->oldStmts,
-            $this->oldTokens
+            $this->oldTokens,
         );
         // $prettyPrinter = new Standard();
         //

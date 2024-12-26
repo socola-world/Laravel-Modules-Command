@@ -33,7 +33,7 @@ class MigrateMakeCommand extends \Illuminate\Database\Console\Migrations\Migrate
 
     protected function writeMigration($name, $table, $create)
     {
-        if (! $table) {
+        if (!$table) {
             [$table, $create] = TableGuesser::guess($name);
         }
 

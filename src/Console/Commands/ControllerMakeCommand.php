@@ -134,7 +134,7 @@ METHOD_STORE_TO;
         $code = str_replace(
             array_keys($replace),
             array_values($replace),
-            $code
+            $code,
         );
 
         $modelClass = '';

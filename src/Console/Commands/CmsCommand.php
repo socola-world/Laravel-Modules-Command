@@ -46,7 +46,7 @@ class CmsCommand extends Command
 
         $this->module = $this->choice(
             'Module?',
-            $choices
+            $choices,
         );
 
         $this->selectCommand();

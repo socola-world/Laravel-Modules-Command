@@ -28,7 +28,7 @@ class ResourceMakeCommand extends \Illuminate\Foundation\Console\ResourceMakeCom
 
         return $stubModify->resource(
             $code,
-            $this->option('model')
+            $this->option('model'),
         );
     }
 }

@@ -55,6 +55,7 @@ return [
             // /**/
             /* Folder */
             '.github/workflows/php-cs-fixer.yml' => '.github/workflows/php-cs-fixer.yml',
+            '.github/FUNDING.yml' => '.github/FUNDING.yml',
             '.github/workflows/review-code.yml' => '.github/workflows/review-code.yml',
             '.github/workflows/release.yml' => '.github/workflows/release.yml',
             '.github/dependabot.yml' => '.github/dependabot.yml',

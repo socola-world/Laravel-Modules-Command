@@ -14,7 +14,10 @@ class Helper
      */
     public static function overwriteConfigFrom($path, $key)
     {
-        if (!(app() instanceof CachesConfiguration && app()->configurationIsCached())) {
+        if (
+            !app() instanceof CachesConfiguration
+            || !app()->configurationIsCached()
+        ) {
             $config = app()->make('config');
 
             $config->set($key, array_merge(

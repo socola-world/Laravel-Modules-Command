@@ -1,0 +1,10 @@
+# Chỉ định nhóm và người dùng cho các thư mục cụ thể
+
+# Toàn bộ kho lưu trữ
+* @owner-team
+
+# Thư mục src/ thuộc về nhóm phát triển chính
+/src/ @dev-team
+
+# Các tệp cấu hình thuộc về nhóm DevOps
+/config/ @devops-team

@@ -33,9 +33,9 @@ class FindMissingCommand extends Command
         $laravelCommandNames = collect($commandNames)
             ->filter(function ($commandName) {
                 return
-                        Str::startsWith($commandName, [
-                            'db:',
-                        ])
+                    Str::startsWith($commandName, [
+                        'db:',
+                    ])
 
                     || (
                         !Str::startsWith($commandName, [

@@ -89,12 +89,13 @@ class PhpParse implements Stringable
 
     public function parse($code)
     {
-        return $this->parser->parse($code)[0];
+        $parser = (new ParserFactory())->createForNewestSupportedVersion();
+        return $parser->parse($code)[0];
     }
 
     public function parseRawCode($code)
     {
-        return $this->parser->parse("<?php \n".$code);
+        return $this->parse("<?php \n".$code);
     }
 
     public function getAst()

@@ -7,7 +7,6 @@ use PhpParser\Node;
 use PhpParser\Node\Stmt\Class_;
 use PhpParser\Node\Stmt\ClassMethod;
 use PhpParser\Node\Stmt\Namespace_;
-use PhpParser\NodeVisitorAbstract;
 use PhpParser\ParserFactory;
 use SocolaDaiCa\LaravelModulesCommand\PhpParse\PrettyPrinter\Standard;
 use Stringable;
@@ -18,7 +17,7 @@ class PhpParse implements Stringable
 
     protected \PhpParser\Lexer\Emulative $lexer;
 
-    protected \PhpParser\Parser\Php7 $parser;
+    protected \PhpParser\Parser $parser;
 
     /**
      * @var Node[]
@@ -40,14 +39,7 @@ class PhpParse implements Stringable
 
     public function __construct()
     {
-        $this->lexer = new \PhpParser\Lexer\Emulative([
-            'usedAttributes' => [
-                'comments',
-                'startLine', 'endLine',
-                'startTokenPos', 'endTokenPos',
-            ],
-        ]);
-        $this->parser = new \PhpParser\Parser\Php7($this->lexer);
+        $this->parser = (new ParserFactory())->createForNewestSupportedVersion();
 
         $this->traverser = new \PhpParser\NodeTraverser();
         $this->traverser->addVisitor(new \PhpParser\NodeVisitor\CloningVisitor());
@@ -97,16 +89,12 @@ class PhpParse implements Stringable
 
     public function parse($code)
     {
-        $parser = (new ParserFactory())->create(ParserFactory::PREFER_PHP7);
-
-        return $parser->parse($code)[0];
+        return $this->parser->parse($code)[0];
     }
 
     public function parseRawCode($code)
     {
-        $parser = (new ParserFactory())->create(ParserFactory::PREFER_PHP7);
-
-        return $parser->parse("<?php \n".$code);
+        return $this->parser->parse("<?php \n".$code);
     }
 
     public function getAst()
@@ -146,23 +134,14 @@ class PhpParse implements Stringable
     {
     }
 
-    // public function extends($class)
-    // {
-    //
-    // }
-
     public function __toString(): string
     {
-        $this->oldTokens = $this->lexer->getTokens();
+        $this->oldTokens = $this->parser->getTokens();
 
         return $this->printer->printFormatPreserving(
             $this->newStmts,
             $this->oldStmts,
             $this->oldTokens,
         );
-        // $prettyPrinter = new Standard();
-        //
-        // return $prettyPrinter->printFormatPreserving([$this->ast]);
-        // return $prettyPrinter->prettyPrintExpr($this->ast);
     }
 }

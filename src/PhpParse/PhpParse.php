@@ -90,6 +90,7 @@ class PhpParse implements Stringable
     public function parse($code)
     {
         $parser = (new ParserFactory())->createForNewestSupportedVersion();
+
         return $parser->parse($code)[0];
     }
 

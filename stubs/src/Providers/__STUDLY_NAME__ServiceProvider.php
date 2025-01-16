@@ -13,9 +13,9 @@ class __STUDLY_NAME__ServiceProvider extends \Illuminate\Support\ServiceProvider
     {
         $this->registerConfig();
         app(\__MODULE_NAMESPACE__\__STUDLY_NAME__\Exceptions\Handler::class);
-        $this->app->register(\__MODULE_NAMESPACE__\__STUDLY_NAME__\Providers\BroadcastServiceProvider::class);
-        $this->app->register(\__MODULE_NAMESPACE__\__STUDLY_NAME__\Providers\EventServiceProvider::class);
-        $this->app->register(\__MODULE_NAMESPACE__\__STUDLY_NAME__\Providers\RouteServiceProvider::class);
+        $this->app->register(BroadcastServiceProvider::class);
+        $this->app->register(EventServiceProvider::class);
+        $this->app->register(RouteServiceProvider::class);
         $this->app->register(\__MODULE_NAMESPACE__\__STUDLY_NAME__\Http\Kernel::class);
     }
 

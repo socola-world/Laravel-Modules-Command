@@ -2,7 +2,6 @@
 
 namespace __MODULE_NAMESPACE__\__STUDLY_NAME__\Exceptions;
 
-use Illuminate\Contracts\Container\Container;
 use SocolaDaiCa\LaravelBadassium\Contracts\Exceptions\Handler as ExceptionHandler;
 use Throwable;
 

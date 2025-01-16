@@ -72,7 +72,7 @@ class __STUDLY_NAME__ServiceProvider extends ServiceProvider
             __DIR__.'/../../__PATH_VIEWS__' => resource_path('views/vendor/__LOWER_NAME__'),
         ], 'views');
 
-        Blade::componentNamespace('__MODULE_NAMESPACE__\\__STUDLY_NAME__\\View\\Components', '__LOWER_NAME__');
+        Blade::componentNamespace('__MODULE_NAMESPACE__\__STUDLY_NAME__\View\Components', '__LOWER_NAME__');
     }
 
     /**
